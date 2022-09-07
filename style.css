@@ -1,0 +1,242 @@
+/* menu */
+.header{
+    background-color: black;
+}
+.header-logo img{
+    width: 90px ;  
+    color: #00ac97;
+}
+.praimary-menu{}
+.praimary-menu ul{
+    margin-bottom: 0;
+    text-align: left;
+
+}
+.praimary-menu ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.praimary-menu ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 15px;
+    position: relative;
+}
+.praimary-menu ul li a::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .4s;
+}
+.praimary-menu ul li a:hover::before{
+    width: 100%;
+}
+
+/* drop down */
+.praimary-menu ul li{
+    position: relative; 
+}
+.praimary-menu ul li ul{
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 200px;
+    background-color: black;
+    border-top: 2px solid #fff;
+    margin-top: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;    
+}
+.praimary-menu ul li ul li{
+    display:inline-block;
+    transition: .2s;
+    padding: 0px 69px;
+    margin-left: -32px;
+    text-align: left;   
+}
+.praimary-menu ul li ul li a{
+    display:block;
+    margin-bottom: 10px;
+    
+}
+.praimary-menu ul li ul li a::before{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .4s;
+}
+.praimary-menu ul li ul li:hover{
+    background-color: #fff;
+}
+.praimary-menu ul li ul li:hover a{
+    color: black;
+
+}
+.praimary-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+}
+/* bannar */
+.bannar{
+    background-image: url(./img/bgc.jpg);
+    padding: 180px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bannar-text h1{
+    color: black;
+}
+.start{
+    background-color: black;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 9px;
+    transition: .4s;
+}
+.start:hover{
+    color: black;
+    background-color: #fff;
+}
+.contact{
+    background-color: #fff;
+    color: black;
+    padding: 12px 32px;
+    border-radius: 9px;
+    transition: .4s;
+}
+.contact:hover{
+    color: #fff;
+    background-color: black;
+}
+/*about */
+.about{
+    background-color: #84a475;
+    padding: 80px 0;
+}
+.heading{
+    margin: 0px 466px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-size: 35px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+.about-text{
+    color: #fff;
+}
+.about img{
+    margin-left: 80px;
+    width: auto;
+    height: 230px;
+}
+/* services */
+.service{
+    background-color: #5f6a64;
+}
+.service-text h1, h2, p{
+    color: #fff;
+}
+.service-text h1{
+    border-bottom: 2px solid #fff;
+    margin: 0px 464px;
+
+}
+.icon img{
+    width: 35px;
+    margin-left: 35px;
+}
+.card{
+    border-radius:10px;
+}
+
+.service-text p{
+    margin: 20px 150px;
+}
+.service-heading{
+    color: black;
+}
+.service-prg{
+    color: black;
+}
+/* work */
+.work{
+    background-color: #84a475;
+}
+.card-work{
+    background-color:  #84a475;
+    border: 1px solid #b2c1a7;
+    margin-top: 35px;
+}
+.card-work img{
+    width: 542px;
+}
+.card-work span{
+    color: #fff;
+    margin-bottom: 5px;
+}
+/* team */
+.team{
+    background-color: #549778;
+}
+.team-text{
+    color: #fff;
+}
+.box{
+    height: 2px;
+    width: 250px;
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.team-icon i{
+    color: #fff;
+    font-size: 25px;
+    padding: 5px 5px;
+    transition: .4s;
+}
+.team-icon i:hover{
+    color: #476b86;
+}
+
+/* want */
+.want{
+    background-color: #5f6a64;
+}
+.want-text{
+    color: #fff;
+}
+.want-text p{
+    margin: 0px 215px;
+}
+#submit{
+    color: #fff;
+    background-color: #00bb9e;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 7px;
+    margin-top: 15px;
+    transition: .4s;
+}
+#submit:hover{
+    background-color: #4d6a86;
+}
+/* footer */
+.footer{
+    background-color: black;
+}
+.footer-text{
+    color: #fff;
+}
